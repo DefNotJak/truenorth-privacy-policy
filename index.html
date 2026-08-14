@@ -14,7 +14,7 @@
 <body>
 
 <h1>Privacy Policy for TrueNorth: Citizenship Test</h1>
-<p><strong>Last updated:</strong> July 27, 2026</p>
+<p><strong>Last updated:</strong> August 13, 2026</p>
 
 <p>TrueNorth: Citizenship Test ("the app") is developed by an independent developer, not affiliated with or endorsed by the Government of Canada or Immigration, Refugees and Citizenship Canada (IRCC). This policy explains what information the app collects, how it's used, and your choices.</p>
 
@@ -22,8 +22,10 @@
 <ul>
   <li><strong>Email address.</strong> When you create an account, your email address is collected and stored by Firebase Authentication (a service provided by Google) to let you sign in. We do not see or store your password ourselves — that is handled securely by Firebase.</li>
   <li><strong>Practice test usage count.</strong> To enforce the free-tier limit (a small number of free practice tests before a paid pass is required), we store a count of completed tests linked to your account in Firebase Cloud Firestore (also a Google service).</li>
+  <li><strong>Study activity linked to your account.</strong> Also stored in Firebase Cloud Firestore, linked to your account: which questions you've marked as a favourite, which flashcards you've reviewed, and your citizenship test date if you choose to set one. This is used only to power those features (showing your favourites list, tracking flashcard progress, and the test-date countdown) and for no other purpose.</li>
+  <li><strong>Question reports you submit.</strong> If you flag a question as wrong, confusing, or outdated using the in-app "Report an issue" feature, we store the question ID, your account ID, the reason you selected, and any note you add, so we can review and fix the content. See "Data Retention and Deletion" below for how long this is kept.</li>
   <li><strong>Quiz results and progress.</strong> Your practice test scores, answers, and category-by-category progress are stored only locally on your device and are not uploaded to us or any server. Uninstalling the app deletes this data.</li>
-  <li><strong>Purchase information.</strong> If you buy a paid pass, the purchase is processed entirely by Google Play Billing. We do not receive or store your payment card details — only a confirmation that a purchase was made.</li>
+  <li><strong>Purchase information.</strong> If you buy a paid pass, the purchase is processed entirely by Google Play Billing. We do not receive or store your payment card details — only a confirmation that a purchase was made. (As of this update, paid passes are not yet available for purchase in the app; this section describes how it will work once they are.)</li>
 </ul>
 
 <h2>What We Don't Do</h2>
@@ -36,7 +38,8 @@
 <p>We use Firebase (Authentication, Cloud Firestore) and Google Play Billing, both provided by Google, to operate the app. These providers process data on our behalf under their own privacy and security terms. We do not otherwise share your information with third parties.</p>
 
 <h2>Data Retention and Deletion</h2>
-<p>Your account data is retained until you delete it. You can permanently delete your account and all associated data (your email address and usage records) at any time directly in the app: go to <strong>Settings &rarr; Account &rarr; Delete Account</strong>. This immediately and permanently removes your account from Firebase Authentication and your data from Firebase Cloud Firestore. This action cannot be undone.</p>
+<p>Your account data is retained until you delete it. You can permanently delete your account and all associated data (your email address, usage records, favourites, and flashcard progress) at any time directly in the app: go to <strong>Settings &rarr; Account &rarr; Delete Account</strong>. This immediately and permanently removes your account from Firebase Authentication and your account document from Firebase Cloud Firestore. This action cannot be undone.</p>
+<p><strong>Exception — question reports.</strong> If you've submitted any question reports (see above), those reports are kept after account deletion so we can still act on unresolved content issues. Once your account is deleted, a report is no longer linked to a live account, but the report itself (question ID, reason, and note) is not automatically erased. If you'd like a specific report removed, email us at the address below and we'll delete it on request.</p>
 <p>If you're unable to access the app, you can request deletion the same way by visiting <a href="delete-account.html">this page</a> or emailing us at the address below.</p>
 
 <h2>Your Rights</h2>
